@@ -9,7 +9,7 @@
             <input class="bg-user inputs" autocomplete="off" v-model="user.username" type="text" placeholder="请输入用户">
             <input class="bg-password inputs" autocomplete="off" v-model="user.password" @keyup.enter="login" type="password" placeholder="请输入密码">
           </form>
-          <div class="sure_button" @click="login">登录</div>
+            <div class="sure_button" @click="login">登录</div>
         </div>
       </div>
     </div>
@@ -84,20 +84,20 @@
         .login-input-box {
           margin-top: 60px;
           padding: 60px;
-          background: rgba(255, 255, 255, 0.4);
+          background: rgba(255, 255, 255, 0.6);
           border-radius: 20px;
-          box-shadow: 0px 0px 50px rgba(135, 185, 190, 0.3);
+          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
         }
       }
     }
   }
   .bg-user {
-    background-image: url('../assets/login2/icon_acc.png') !important;
+    background-image: url("../assets/login2/icon_acc.png") !important;
     background-repeat: no-repeat !important;
     background-position: 8px 10px !important;
   }
   .bg-password {
-    background-image: url('../assets/login2/icon_lock.png') !important;
+    background-image: url("../assets/login2/icon_lock.png") !important;
     background-repeat: no-repeat !important;
     background-position: 8px 10px !important;
   }
@@ -105,34 +105,37 @@
     display: block;
     margin: 30px auto;
     padding: 12px 0 12px 48px;
-    border: 1px solid #c4eced;
+    border: 1px solid rgb(235, 185, 150);
     width: 360px;
     outline: none;
     border-radius: 10px;
     height: 48px;
     font-size: 18px;
     line-height: 48px;
-    color: #ab9794;
-    background: #e6f5f5;
+    color: rgb(235, 145, 75);
+    background: rgb(245, 240, 230);
   }
   .sure_button {
     width: 360px;
     height: 60px;
     color: white;
     font-weight: bold;
-    padding: 20px 0;
     text-align: center;
-    background: #87d2eb;
+    background: rgb(245, 180, 125);
     border-radius: 30px;
     font-size: 20px;
     margin: 48px auto 0 auto;
     cursor: pointer;
+    line-height: 60px;
   }
   input:-webkit-autofill,
    textarea:-webkit-autofill,
   select:-webkit-autofill  {
     background-color: rgb(250, 255, 189);
     background-image: none;
-    color: rgb(0, 0, 0);
+    color: rgb(215, 175, 145);
+  }
+  ::-webkit-input-placeholder {
+    color: rgb(215, 175, 145);
   }
 </style>
